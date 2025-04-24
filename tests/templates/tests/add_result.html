@@ -1,0 +1,80 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание результата</title>
+    <link rel="stylesheet" href="{% static 'tests/create.css' %}">
+</head>
+<body>
+    <div class="container">
+        <img src="{% static 'users/images/LeftBlob.png' %}" alt="Левая фигура" class="shape shape-left">
+        <img src="{% static 'users/images/UpBlob.png' %}" alt="Верхняя фигура" class="shape top-shape">
+        <img src="{% static 'users/images/DownBlob.png' %}" alt="Нижняя фигура" class="shape bottom-shape">
+        <div class="create-form">
+            <h2>Создание результата</h2>
+            <form method="post" action="{% url 'tests:add_result' test_pk %}">
+                {% csrf_token %}
+
+                <!-- Поле для текста результата -->
+                <div class="input-group">
+                    <textarea name="text" id="text" placeholder="Текст результата"></textarea>
+                </div>
+
+                <!-- Поле для минимального результата -->
+                <div class="input-group">
+                    <input type="number" id="min_score" name="min_score" placeholder="Минимальный результат" value="">
+                </div>
+
+                <!-- Поле для максимального результата -->
+                <div class="input-group">
+                    <input type="number" id="max_score" name="max_score" placeholder="Максимальный результат" value="">
+                </div>
+
+                <!-- Поле для персональных рекомендаций -->
+                <div class="input-group">
+                    <textarea name="personality_recommendations_text" id="personality_recommendations_text" placeholder="Персональные рекомендации"></textarea>
+                </div>
+
+                <!-- Поле для выбора видов деятельности -->
+                <div class="input-group">
+                    <div class="input-group">
+                        <label for="types_activities">Рекомендованные виды деятельности:</label>
+                        <select name="types_activities" multiple>
+                            {% for activity in form.types_activities.field.queryset %}
+                                <option value="{{ activity.id }}">{{ activity.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Поле для выбора типа личности -->
+                <div class="input-group">
+                    <select id="personality_type" name="personality_type">
+                        <option value="">Выберите тип личности</option>
+                        {% for personality in form.personality_type.field.queryset %}
+                            <option value="{{ personality.pk }}" {% if form.personality_type.value == personality.pk %}selected{% endif %}>{{ personality.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <!-- Поле для склонностей -->
+                <div class="input-group">
+                    <div class="input-group">
+                        <label for="tendencies">Склонности:</label>
+                        <select name="tendencies" multiple>
+                            {% for tendency in form.tendencies.field.queryset %}
+                                <option value="{{ tendency.id }}" {% if tendency in form.tendencies.value %}selected{% endif %}>{{ tendency.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit">Создать результат</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Редактирование вопроса</title>
+    <link rel="stylesheet" href="{% static 'tests/create.css' %}">
+</head>
+<body>
+<div class="container">
+    <img src="{% static 'users/images/LeftBlob.png' %}" class="shape shape-left" alt="">
+    <img src="{% static 'users/images/UpBlob.png' %}" class="shape top-shape" alt="">
+    <img src="{% static 'users/images/DownBlob.png' %}" class="shape bottom-shape" alt="">
+
+    <div class="create-form">
+        <h2>Редактирование вопроса</h2>
+        <form method="post">
+            {% csrf_token %}
+
+            <div class="input-group">
+                {{ form.type.label_tag }} 
+                {{ form.type }}
+            </div>
+            <div class="input-group">
+                {{ form.text.label_tag }} 
+                {{ form.text }}
+            </div>
+
+            <div class="input-group">
+                {{ form.order.label_tag }}
+                {{ form.order }}
+            </div>
+
+            <h3>Варианты ответа</h3>
+            {{ formset.management_form }}
+
+            <div id="formset-container">
+                {% for form in formset %}
+                    <div class="variant-form">
+                        {{ form.id }}
+
+                        <div class="input-group">
+                            {{ form.text.label_tag }}
+                            {{ form.text }}
+                        </div>
+                        <div class="input-group">
+                            {{ form.scores.label_tag }}
+                            {{ form.scores }}
+                        </div>
+                        {% if form.instance.pk %}
+                            <div class="input-group delete-checkbox">
+                                <label>
+                                    {{ form.DELETE }}
+                                    <span class="delete-label">Удалить вариант</span>
+                                </label>
+                            </div>
+                        {% endif %}
+                        <hr>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <button type="button" id="add-variant" style="margin-bottom: 15px;">Добавить вариант</button>
+            <button type="submit">Сохранить изменения</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const formsetContainer = document.getElementById('formset-container');
+        const addButton = document.getElementById('add-variant');
+        const totalForms = document.getElementById('id_variant_set-TOTAL_FORMS');
+    
+        addButton.addEventListener('click', function() {
+            const formCount = parseInt(totalForms.value);
+    
+            const newForm = formsetContainer.children[0].cloneNode(true);
+    
+            newForm.querySelectorAll('input, textarea').forEach(function(input) {
+                if (input.type !== 'hidden') {
+                    input.value = '';
+                }
+    
+                const name = input.name.replace(/variant_set-\d+-/, `variant_set-${formCount}-`);
+                const id = input.id.replace(/variant_set-\d+-/, `variant_set-${formCount}-`);
+                input.name = name;
+                input.id = id;
+            });
+    
+            newForm.querySelectorAll('label').forEach(function(label) {
+                const newFor = label.htmlFor.replace(/variant_set-\d+-/, `variant_set-${formCount}-`);
+                label.htmlFor = newFor;
+            });
+    
+            formsetContainer.appendChild(newForm);
+            totalForms.value = formCount + 1;
+        });
+    });
+</script>
+
+</body>
+</html>

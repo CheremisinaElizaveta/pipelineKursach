@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание теста</title>
+    <link rel="stylesheet" href="{% static 'tests/create.css' %}">
+</head>
+<body>
+    <div class="container">
+        <img src="{% static 'users/images/LeftBlob.png' %}" alt="Левая фигура" class="shape shape-left">
+        <img src="{% static 'users/images/UpBlob.png' %}" alt="Верхняя фигура" class="shape top-shape">
+        <img src="{% static 'users/images/DownBlob.png' %}" alt="Нижняя фигура" class="shape bottom-shape">
+        <div class="create-form">
+            <h2>Создание теста</h2>
+            <form method="post" action="{% url 'tests:create' %}" enctype="multipart/form-data">
+                {% csrf_token %}
+
+                <div class="input-group">
+                    <label for="preview">Превью</label>
+                    <input type="file" id="preview" name="preview">
+                </div>
+                <div class="input-group">
+                    <label for="preview">Иллюстрация</label>
+                    <input type="file" id="illustration" name="illustration">
+                </div>
+                <div class="input-group">
+                    <input type="text" id="name" name="name" placeholder="Название">
+                </div>
+                <div class="input-group">
+                    <textarea name="description" id="description" placeholder="Описание"></textarea>
+                </div>
+                <div class="input-group">
+                    <select id="category" name="category" class="select-category">
+                        <option value="">Выберите категорию</option>
+                        {% for category in categories %}
+                            <option value="{{ category.pk }}">{{ category.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="trial">Пробное тестирование</label>
+                    <input type="checkbox" id="trial" name="trial">
+                </div>
+                <button type="submit">Создать тест</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

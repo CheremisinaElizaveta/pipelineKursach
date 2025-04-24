@@ -1,0 +1,358 @@
+2025-04-17 14:24:33 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 14:24:39 | INFO | django.utils.autoreload | D:\code\testapp\testapp\testapp\settings.py changed, reloading.
+2025-04-17 14:24:39 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 14:24:45 | INFO | django.server | "GET / HTTP/1.1" 200 2852
+2025-04-17 14:24:45 | INFO | django.server | "GET /static/tests/testspsychologist.css HTTP/1.1" 200 2608
+2025-04-17 14:24:45 | INFO | django.server | "GET /static/tests/images/image2.png HTTP/1.1" 200 5448
+2025-04-17 14:24:45 | WARNING | django.request | Not Found: /favicon.ico
+2025-04-17 14:24:45 | WARNING | django.server | "GET /favicon.ico HTTP/1.1" 404 2674
+2025-04-17 14:24:49 | INFO | django.server | "GET /users/login/ HTTP/1.1" 200 1430
+2025-04-17 14:24:49 | INFO | django.server | "GET /static/users/images/UpBlob.png HTTP/1.1" 200 2867
+2025-04-17 14:24:49 | INFO | django.server | "GET /static/users/images/LeftBlob.png HTTP/1.1" 200 3218
+2025-04-17 14:24:49 | INFO | django.server | "GET /static/users/auth.css HTTP/1.1" 200 4342
+2025-04-17 14:24:49 | INFO | django.server | "GET /static/users/images/DownBlob.png HTTP/1.1" 200 3802
+2025-04-17 14:24:52 | INFO | django.server | "POST /users/login/ HTTP/1.1" 302 0
+2025-04-17 14:24:52 | INFO | django.server | "GET / HTTP/1.1" 200 3178
+2025-04-17 14:24:52 | INFO | django.server | "GET /static/tests/images/image4.png HTTP/1.1" 200 4191
+2025-04-17 14:26:42 | INFO | django.server | "GET /tests/add_question/3/ HTTP/1.1" 302 0
+2025-04-17 14:26:42 | INFO | django.server | "GET / HTTP/1.1" 200 3178
+2025-04-17 14:26:49 | INFO | django.server | "GET /users/logout/ HTTP/1.1" 302 0
+2025-04-17 14:26:49 | INFO | django.server | "GET /users/login/ HTTP/1.1" 200 1430
+2025-04-17 14:26:52 | INFO | django.server | "POST /users/login/ HTTP/1.1" 302 0
+2025-04-17 14:26:52 | INFO | django.server | "GET / HTTP/1.1" 200 3383
+2025-04-17 14:26:53 | INFO | django.server | "GET /tests/add_question/3/ HTTP/1.1" 200 4155
+2025-04-17 14:26:53 | INFO | django.server | "GET /static/tests/create.css HTTP/1.1" 200 6908
+2025-04-17 14:27:18 | INFO | django.server | "POST /tests/add_question/3/ HTTP/1.1" 302 0
+2025-04-17 14:27:18 | INFO | django.server | "GET / HTTP/1.1" 200 3383
+2025-04-17 14:28:02 | WARNING | django.request | Not Found: /tests/update_question/.3
+2025-04-17 14:28:02 | WARNING | django.server | "GET /tests/update_question/.3 HTTP/1.1" 404 4833
+2025-04-17 14:28:04 | INFO | django.server | "GET /tests/update_question/3 HTTP/1.1" 301 0
+2025-04-17 14:28:04 | INFO | django.server | "GET /tests/update_question/3/ HTTP/1.1" 200 4718
+2025-04-17 14:28:48 | INFO | django.server | "GET /tests/update_question/3/ HTTP/1.1" 200 7251
+2025-04-17 14:28:48 | INFO | django.server | "GET /static/users/images/LeftBlob.png HTTP/1.1" 200 3218
+2025-04-17 14:28:48 | INFO | django.server | "GET /static/tests/create.css HTTP/1.1" 200 6908
+2025-04-17 14:28:48 | INFO | django.server | "GET /static/users/images/UpBlob.png HTTP/1.1" 200 2867
+2025-04-17 14:28:48 | INFO | django.server | "GET /static/users/images/DownBlob.png HTTP/1.1" 200 3802
+2025-04-17 14:28:48 | WARNING | django.request | Not Found: /favicon.ico
+2025-04-17 14:28:48 | WARNING | django.server | "GET /favicon.ico HTTP/1.1" 404 2674
+2025-04-17 14:29:18 | INFO | django.server | "GET /tests/update_question/3/ HTTP/1.1" 200 7311
+2025-04-17 14:29:18 | INFO | django.server | "GET /static/users/images/UpBlob.png HTTP/1.1" 200 2867
+2025-04-17 14:29:18 | INFO | django.server | "GET /static/users/images/LeftBlob.png HTTP/1.1" 200 3218
+2025-04-17 14:29:18 | INFO | django.server | "GET /static/tests/create.css HTTP/1.1" 200 6908
+2025-04-17 14:29:18 | INFO | django.server | "GET /static/users/images/DownBlob.png HTTP/1.1" 200 3802
+2025-04-17 14:29:18 | WARNING | django.request | Not Found: /favicon.ico
+2025-04-17 14:29:18 | WARNING | django.server | "GET /favicon.ico HTTP/1.1" 404 2674
+2025-04-17 14:30:25 | INFO | django.server | "GET /tests/update_question/3/ HTTP/1.1" 200 7764
+2025-04-17 14:30:25 | INFO | django.server | "GET /static/users/images/LeftBlob.png HTTP/1.1" 200 3218
+2025-04-17 14:30:25 | INFO | django.server | "GET /static/users/images/UpBlob.png HTTP/1.1" 200 2867
+2025-04-17 14:30:25 | INFO | django.server | "GET /static/tests/create.css HTTP/1.1" 200 7341
+2025-04-17 14:30:25 | INFO | django.server | "GET /static/users/images/DownBlob.png HTTP/1.1" 200 3802
+2025-04-17 14:30:25 | WARNING | django.request | Not Found: /favicon.ico
+2025-04-17 14:30:25 | WARNING | django.server | "GET /favicon.ico HTTP/1.1" 404 2674
+2025-04-17 14:30:37 | INFO | django.server | "GET /tests/update_question/3/ HTTP/1.1" 200 7764
+2025-04-17 14:30:37 | INFO | django.server | "GET /static/users/images/LeftBlob.png HTTP/1.1" 200 3218
+2025-04-17 14:30:37 | INFO | django.server | "GET /static/users/images/UpBlob.png HTTP/1.1" 200 2867
+2025-04-17 14:30:37 | INFO | django.server | "GET /static/tests/create.css HTTP/1.1" 200 7340
+2025-04-17 14:30:38 | INFO | django.server | "GET /static/users/images/DownBlob.png HTTP/1.1" 200 3802
+2025-04-17 14:30:38 | WARNING | django.request | Not Found: /favicon.ico
+2025-04-17 14:30:38 | WARNING | django.server | "GET /favicon.ico HTTP/1.1" 404 2674
+2025-04-17 14:30:39 | INFO | django.server | "GET /tests/update_question/3/ HTTP/1.1" 200 7764
+2025-04-17 14:30:39 | INFO | django.server | "GET /static/users/images/LeftBlob.png HTTP/1.1" 200 3218
+2025-04-17 14:30:39 | INFO | django.server | "GET /static/users/images/UpBlob.png HTTP/1.1" 200 2867
+2025-04-17 14:30:39 | INFO | django.server | "GET /static/tests/create.css HTTP/1.1" 200 7340
+2025-04-17 14:30:39 | INFO | django.server | "GET /static/users/images/DownBlob.png HTTP/1.1" 200 3802
+2025-04-17 14:30:39 | WARNING | django.request | Not Found: /favicon.ico
+2025-04-17 14:30:39 | WARNING | django.server | "GET /favicon.ico HTTP/1.1" 404 2674
+2025-04-17 14:30:49 | INFO | django.server | "GET /tests/update_question/3/ HTTP/1.1" 200 7764
+2025-04-17 14:30:49 | INFO | django.server | "GET /static/users/images/LeftBlob.png HTTP/1.1" 200 3218
+2025-04-17 14:30:49 | INFO | django.server | "GET /static/users/images/UpBlob.png HTTP/1.1" 200 2867
+2025-04-17 14:30:49 | INFO | django.server | "GET /static/tests/create.css HTTP/1.1" 200 7318
+2025-04-17 14:30:49 | INFO | django.server | "GET /static/users/images/DownBlob.png HTTP/1.1" 200 3802
+2025-04-17 14:30:49 | WARNING | django.request | Not Found: /favicon.ico
+2025-04-17 14:30:49 | WARNING | django.server | "GET /favicon.ico HTTP/1.1" 404 2674
+2025-04-17 14:30:49 | INFO | django.server | "GET /tests/update_question/3/ HTTP/1.1" 200 7764
+2025-04-17 14:30:49 | INFO | django.server | "GET /static/users/images/LeftBlob.png HTTP/1.1" 200 3218
+2025-04-17 14:30:49 | INFO | django.server | "GET /static/users/images/UpBlob.png HTTP/1.1" 200 2867
+2025-04-17 14:30:49 | INFO | django.server | "GET /static/tests/create.css HTTP/1.1" 200 7318
+2025-04-17 14:30:49 | INFO | django.server | "GET /static/users/images/DownBlob.png HTTP/1.1" 200 3802
+2025-04-17 14:30:49 | WARNING | django.request | Not Found: /favicon.ico
+2025-04-17 14:30:49 | WARNING | django.server | "GET /favicon.ico HTTP/1.1" 404 2674
+2025-04-17 14:30:50 | INFO | django.server | "GET /tests/update_question/3/ HTTP/1.1" 200 7764
+2025-04-17 14:30:50 | INFO | django.server | "GET /static/users/images/LeftBlob.png HTTP/1.1" 200 3218
+2025-04-17 14:30:50 | INFO | django.server | "GET /static/tests/create.css HTTP/1.1" 200 7318
+2025-04-17 14:30:50 | INFO | django.server | "GET /static/users/images/UpBlob.png HTTP/1.1" 200 2867
+2025-04-17 14:30:50 | INFO | django.server | "GET /static/users/images/DownBlob.png HTTP/1.1" 200 3802
+2025-04-17 14:30:50 | WARNING | django.request | Not Found: /favicon.ico
+2025-04-17 14:30:50 | WARNING | django.server | "GET /favicon.ico HTTP/1.1" 404 2674
+2025-04-17 14:30:57 | INFO | django.server | "GET /tests/update_question/3/ HTTP/1.1" 200 7764
+2025-04-17 14:30:57 | INFO | django.server | "GET /static/users/images/UpBlob.png HTTP/1.1" 200 2867
+2025-04-17 14:30:57 | INFO | django.server | "GET /static/users/images/LeftBlob.png HTTP/1.1" 200 3218
+2025-04-17 14:30:57 | INFO | django.server | "GET /static/tests/create.css HTTP/1.1" 200 7341
+2025-04-17 14:30:57 | INFO | django.server | "GET /static/users/images/DownBlob.png HTTP/1.1" 200 3802
+2025-04-17 14:30:57 | WARNING | django.request | Not Found: /favicon.ico
+2025-04-17 14:30:57 | WARNING | django.server | "GET /favicon.ico HTTP/1.1" 404 2674
+2025-04-17 14:31:13 | INFO | django.server | "GET /tests/update_question/3/ HTTP/1.1" 200 7764
+2025-04-17 14:31:13 | INFO | django.server | "GET /static/users/images/UpBlob.png HTTP/1.1" 200 2867
+2025-04-17 14:31:13 | INFO | django.server | "GET /static/users/images/LeftBlob.png HTTP/1.1" 200 3218
+2025-04-17 14:31:13 | INFO | django.server | "GET /static/tests/create.css HTTP/1.1" 200 7364
+2025-04-17 14:31:13 | INFO | django.server | "GET /static/users/images/DownBlob.png HTTP/1.1" 200 3802
+2025-04-17 14:31:13 | WARNING | django.request | Not Found: /favicon.ico
+2025-04-17 14:31:13 | WARNING | django.server | "GET /favicon.ico HTTP/1.1" 404 2674
+2025-04-17 15:21:51 | INFO | django.server | "GET /tests/update_question/3/ HTTP/1.1" 200 7764
+2025-04-17 15:21:51 | INFO | django.server | "GET /static/users/images/UpBlob.png HTTP/1.1" 200 2867
+2025-04-17 15:21:51 | INFO | django.server | "GET /static/users/images/LeftBlob.png HTTP/1.1" 200 3218
+2025-04-17 15:21:51 | INFO | django.server | "GET /static/tests/create.css HTTP/1.1" 200 7340
+2025-04-17 15:21:51 | INFO | django.server | "GET /static/users/images/DownBlob.png HTTP/1.1" 200 3802
+2025-04-17 15:21:51 | WARNING | django.request | Not Found: /favicon.ico
+2025-04-17 15:21:51 | WARNING | django.server | "GET /favicon.ico HTTP/1.1" 404 2674
+2025-04-17 15:22:06 | INFO | django.server | "POST /tests/update_question/3/ HTTP/1.1" 200 6491
+2025-04-17 15:22:38 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 15:22:39 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 15:22:51 | INFO | django.server | "GET /tests/update_question/3/ HTTP/1.1" 200 7764
+2025-04-17 15:23:01 | INFO | django.server | "POST /tests/update_question/3/ HTTP/1.1" 200 6483
+2025-04-17 15:23:10 | INFO | django.server | "GET /tests/update_question/3/ HTTP/1.1" 200 7764
+2025-04-17 15:23:17 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 15:23:18 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 15:23:21 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 15:23:21 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 15:23:23 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 15:23:24 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 15:23:26 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 15:23:26 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 15:23:29 | INFO | django.server | "GET /tests/update_question/3/ HTTP/1.1" 200 7764
+2025-04-17 15:23:36 | INFO | django.server | "POST /tests/update_question/3/ HTTP/1.1" 200 6486
+2025-04-17 15:24:02 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 15:24:02 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 15:24:12 | INFO | django.server | "GET /tests/update_question/3/ HTTP/1.1" 200 7764
+2025-04-17 15:24:24 | INFO | django.server | "POST /tests/update_question/3/ HTTP/1.1" 200 6483
+2025-04-17 15:26:22 | INFO | django.server | "GET /tests/update_question/3/ HTTP/1.1" 200 8178
+2025-04-17 15:26:25 | INFO | django.server | "POST /tests/update_question/3/ HTTP/1.1" 302 0
+2025-04-17 15:26:25 | INFO | django.server | "GET / HTTP/1.1" 200 3383
+2025-04-17 15:26:25 | INFO | django.server | "GET /static/tests/images/image4.png HTTP/1.1" 200 4191
+2025-04-17 15:26:25 | INFO | django.server | "GET /static/tests/testspsychologist.css HTTP/1.1" 200 2608
+2025-04-17 15:26:42 | INFO | django.server | "GET /tests/update_question/3/ HTTP/1.1" 200 8181
+2025-04-17 15:26:53 | INFO | django.server | "POST /tests/update_question/3/ HTTP/1.1" 302 0
+2025-04-17 15:26:53 | INFO | django.server | "GET / HTTP/1.1" 200 3383
+2025-04-17 15:27:00 | INFO | django.server | "GET /tests/update_question/3 HTTP/1.1" 301 0
+2025-04-17 15:27:00 | INFO | django.server | "GET /tests/update_question/3/ HTTP/1.1" 200 6856
+2025-04-17 15:27:00 | INFO | django.server | "GET /static/tests/create.css HTTP/1.1" 304 0
+2025-04-17 15:45:22 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 15:45:22 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 15:52:52 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\models.py changed, reloading.
+2025-04-17 15:52:52 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 15:52:53 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\models.py changed, reloading.
+2025-04-17 15:52:54 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 15:53:00 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\models.py changed, reloading.
+2025-04-17 15:53:00 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 15:53:26 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 15:53:47 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\forms.py changed, reloading.
+2025-04-17 15:53:47 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 15:53:51 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\forms.py changed, reloading.
+2025-04-17 15:53:52 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 15:57:39 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\forms.py changed, reloading.
+2025-04-17 15:57:39 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 15:58:09 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 15:58:09 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 15:58:22 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 15:58:22 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 16:01:12 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 16:01:12 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 16:01:30 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 16:01:30 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 16:01:38 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 16:01:39 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 16:01:45 | INFO | django.server | "GET / HTTP/1.1" 200 3383
+2025-04-17 16:01:48 | INFO | django.server | "GET /tests/add_question/3/ HTTP/1.1" 200 4155
+2025-04-17 16:01:48 | INFO | django.server | "GET /static/tests/create.css HTTP/1.1" 304 0
+2025-04-17 16:01:58 | INFO | django.server | "POST /tests/add_question/3/ HTTP/1.1" 200 4182
+2025-04-17 16:02:32 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 16:02:32 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 16:02:34 | INFO | django.server | "GET /tests/add_question/3/ HTTP/1.1" 200 4155
+2025-04-17 16:02:42 | INFO | django.server | "POST /tests/add_question/3/ HTTP/1.1" 200 4177
+2025-04-17 16:02:51 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 16:02:51 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 16:03:57 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\forms.py changed, reloading.
+2025-04-17 16:03:57 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 16:04:03 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\forms.py changed, reloading.
+2025-04-17 16:04:03 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 16:04:10 | INFO | django.server | "GET /tests/add_question/3/ HTTP/1.1" 200 4155
+2025-04-17 16:04:26 | INFO | django.server | "GET /tests/add_question/3/ HTTP/1.1" 200 4155
+2025-04-17 16:04:32 | INFO | django.server | "POST /tests/add_question/3/ HTTP/1.1" 302 0
+2025-04-17 16:04:32 | INFO | django.server | "GET / HTTP/1.1" 200 3383
+2025-04-17 16:08:35 | INFO | django.server | "GET /admin HTTP/1.1" 301 0
+2025-04-17 16:08:35 | INFO | django.server | "GET /admin/ HTTP/1.1" 302 0
+2025-04-17 16:08:35 | WARNING | django.request | Not Found: /accounts/login/
+2025-04-17 16:08:35 | WARNING | django.server | "GET /accounts/login/?next=/admin/ HTTP/1.1" 404 2699
+2025-04-17 16:08:55 | INFO | django.server | "GET /tests/update_question/4 HTTP/1.1" 301 0
+2025-04-17 16:08:55 | INFO | django.server | "GET /tests/update_question/4/ HTTP/1.1" 200 5774
+2025-04-17 16:09:34 | INFO | django.server | "GET /tests/update_question/4/ HTTP/1.1" 200 5768
+2025-04-17 16:09:34 | INFO | django.server | "GET /static/users/images/UpBlob.png HTTP/1.1" 200 2867
+2025-04-17 16:09:34 | INFO | django.server | "GET /static/tests/create.css HTTP/1.1" 200 7340
+2025-04-17 16:09:34 | INFO | django.server | "GET /static/users/images/LeftBlob.png HTTP/1.1" 200 3218
+2025-04-17 16:09:34 | INFO | django.server | "GET /static/users/images/DownBlob.png HTTP/1.1" 200 3802
+2025-04-17 16:09:34 | WARNING | django.request | Not Found: /favicon.ico
+2025-04-17 16:09:34 | WARNING | django.server | "GET /favicon.ico HTTP/1.1" 404 2674
+2025-04-17 16:09:56 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\forms.py changed, reloading.
+2025-04-17 16:09:56 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 16:10:02 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\forms.py changed, reloading.
+2025-04-17 16:10:03 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 16:10:05 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\forms.py changed, reloading.
+2025-04-17 16:10:05 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 16:10:06 | INFO | django.server | "GET /tests/update_question/4/ HTTP/1.1" 200 5768
+2025-04-17 16:10:15 | INFO | django.server | "POST /tests/update_question/4/ HTTP/1.1" 302 0
+2025-04-17 16:10:15 | INFO | django.server | "GET / HTTP/1.1" 200 3383
+2025-04-17 16:10:22 | INFO | django.server | "GET /tests/update_question/4/ HTTP/1.1" 200 5768
+2025-04-17 16:10:24 | INFO | django.server | "GET /tests/update_question/3/ HTTP/1.1" 200 7087
+2025-04-17 16:17:37 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 16:17:37 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 16:17:43 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 16:17:43 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 16:17:45 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 16:17:46 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 16:17:57 | INFO | django.server | "GET /tests/update_question/3/ HTTP/1.1" 200 7087
+2025-04-17 16:18:01 | INFO | django.server | "GET /tests/update_question/4/ HTTP/1.1" 200 5768
+2025-04-17 16:18:04 | INFO | django.server | "POST /tests/update_question/4/ HTTP/1.1" 302 0
+2025-04-17 16:18:04 | INFO | django.server | "GET / HTTP/1.1" 200 3383
+2025-04-17 16:18:42 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 16:18:42 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 16:18:43 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 16:18:44 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 16:18:45 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 16:18:45 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 16:18:53 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 16:18:54 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 16:34:58 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\models.py changed, reloading.
+2025-04-17 16:34:58 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 16:35:21 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\models.py changed, reloading.
+2025-04-17 16:35:21 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 16:35:32 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 16:36:03 | INFO | django.server | "GET / HTTP/1.1" 200 3424
+2025-04-17 16:36:03 | INFO | django.server | "GET /static/tests/testspsychologist.css HTTP/1.1" 200 2608
+2025-04-17 16:36:03 | INFO | django.server | "GET /static/tests/images/image4.png HTTP/1.1" 200 4191
+2025-04-17 16:36:03 | WARNING | django.request | Not Found: /favicon.ico
+2025-04-17 16:36:03 | WARNING | django.server | "GET /favicon.ico HTTP/1.1" 404 2674
+2025-04-17 16:36:09 | INFO | django.server | "GET / HTTP/1.1" 200 3446
+2025-04-17 16:36:09 | INFO | django.server | "GET /static/tests/testspsychologist.css HTTP/1.1" 200 2608
+2025-04-17 16:36:09 | INFO | django.server | "GET /static/tests/images/image4.png HTTP/1.1" 200 4191
+2025-04-17 16:36:09 | WARNING | django.request | Not Found: /favicon.ico
+2025-04-17 16:36:09 | WARNING | django.server | "GET /favicon.ico HTTP/1.1" 404 2674
+2025-04-17 16:42:00 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\urls.py changed, reloading.
+2025-04-17 16:42:00 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 16:42:15 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 16:42:16 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 16:42:30 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 16:42:30 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 16:42:38 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\urls.py changed, reloading.
+2025-04-17 16:42:38 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 16:42:47 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 16:42:48 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 16:42:52 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 16:42:52 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 16:42:53 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 16:42:54 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 16:43:19 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 16:43:20 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 16:43:24 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 16:43:24 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 16:43:55 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 16:43:55 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 17:31:17 | INFO | django.server | "GET / HTTP/1.1" 200 3469
+2025-04-17 17:31:25 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 17:31:26 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 17:31:29 | INFO | django.server | "GET /tests/questions_list/3/ HTTP/1.1" 200 2673
+2025-04-17 17:31:52 | INFO | django.server | "GET /tests/questions_list/3/ HTTP/1.1" 200 2709
+2025-04-17 17:31:52 | INFO | django.server | "GET /static/tests/testspsychologist.css HTTP/1.1" 200 2608
+2025-04-17 17:31:52 | INFO | django.server | "GET /static/tests/images/image4.png HTTP/1.1" 200 4191
+2025-04-17 17:31:52 | WARNING | django.request | Not Found: /favicon.ico
+2025-04-17 17:31:52 | WARNING | django.server | "GET /favicon.ico HTTP/1.1" 404 2674
+2025-04-17 17:32:21 | INFO | django.server | "GET /tests/questions_list/3/ HTTP/1.1" 200 2792
+2025-04-17 17:32:21 | INFO | django.server | "GET /static/tests/testspsychologist.css HTTP/1.1" 200 2608
+2025-04-17 17:32:21 | INFO | django.server | "GET /static/tests/images/image4.png HTTP/1.1" 200 4191
+2025-04-17 17:32:21 | WARNING | django.request | Not Found: /favicon.ico
+2025-04-17 17:32:21 | WARNING | django.server | "GET /favicon.ico HTTP/1.1" 404 2674
+2025-04-17 17:32:42 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 17:32:43 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 17:33:42 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 17:33:42 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 17:33:43 | INFO | django.server | "GET /tests/questions_list/3/ HTTP/1.1" 200 3244
+2025-04-17 17:33:43 | INFO | django.server | "GET /static/tests/images/image4.png HTTP/1.1" 200 4191
+2025-04-17 17:33:43 | INFO | django.server | "GET /static/tests/testspsychologist.css HTTP/1.1" 200 2608
+2025-04-17 17:33:43 | WARNING | django.request | Not Found: /favicon.ico
+2025-04-17 17:33:43 | WARNING | django.server | "GET /favicon.ico HTTP/1.1" 404 2674
+2025-04-17 17:33:44 | INFO | django.server | "GET /tests/update_question/4/ HTTP/1.1" 200 5768
+2025-04-17 17:33:44 | INFO | django.server | "GET /static/tests/create.css HTTP/1.1" 304 0
+2025-04-17 17:35:22 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 17:35:22 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 17:36:03 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 17:36:03 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 17:36:12 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 17:36:13 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 17:36:20 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 17:36:20 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 17:36:39 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 17:36:39 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 17:36:43 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 17:36:44 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 17:37:17 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 17:37:18 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 17:37:22 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 17:37:22 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 17:43:03 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\urls.py changed, reloading.
+2025-04-17 17:43:04 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 17:43:24 | INFO | django.server | "GET /tests/questions_list/3/ HTTP/1.1" 200 3292
+2025-04-17 17:43:26 | ERROR | django.request | Internal Server Error: /tests/delete_question/3/
+Traceback (most recent call last):
+  File "C:\Users\yasf\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'test'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasf\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasf\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\testapp\testapp\tests\decorators.py", line 9, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\testapp\testapp\tests\views.py", line 291, in delete_question
+    return redirect('test:questions_list', test_id=test.pk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasf\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasf\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasf\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'test' is not a registered namespace
+2025-04-17 17:43:26 | ERROR | django.server | "GET /tests/delete_question/3/ HTTP/1.1" 500 90394
+2025-04-17 17:43:37 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 17:43:37 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 17:43:39 | INFO | django.server | "GET /tests/questions_list/3/ HTTP/1.1" 200 2450
+2025-04-17 17:50:17 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 17:50:17 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 17:50:25 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 17:50:25 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 17:50:30 | INFO | django.server | "GET /tests/questions_list/3/ HTTP/1.1" 200 2450
+2025-04-17 17:50:32 | INFO | django.server | "GET / HTTP/1.1" 200 3469
+2025-04-17 17:50:33 | INFO | django.server | "GET /tests/add_question/3/ HTTP/1.1" 200 4155
+2025-04-17 17:50:37 | INFO | django.server | "POST /tests/add_question/3/ HTTP/1.1" 302 0
+2025-04-17 17:50:37 | INFO | django.server | "GET / HTTP/1.1" 200 3469
+2025-04-17 17:50:38 | INFO | django.server | "GET /tests/questions_list/3/ HTTP/1.1" 200 3287
+2025-04-17 17:50:41 | INFO | django.server | "GET /tests/delete_question/4/ HTTP/1.1" 302 0
+2025-04-17 17:50:41 | INFO | django.server | "GET /tests/questions_list/3/ HTTP/1.1" 200 2446
+2025-04-17 17:50:49 | INFO | django.utils.autoreload | D:\code\testapp\testapp\tests\views.py changed, reloading.
+2025-04-17 17:50:49 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-17 18:46:42 | WARNING | django.request | Not Found: /favicon.ico
+2025-04-17 18:46:42 | WARNING | django.server | "GET /favicon.ico HTTP/1.1" 404 2674
+2025-04-17 19:21:02 | WARNING | django.request | Not Found: /favicon.ico
+2025-04-17 19:21:02 | WARNING | django.server | "GET /favicon.ico HTTP/1.1" 404 2674
+2025-04-17 20:43:05 | INFO | django.server | "GET /static/tests/images/image4.png HTTP/1.1" 200 4191
+2025-04-17 20:43:05 | WARNING | django.request | Not Found: /favicon.ico
+2025-04-17 20:43:05 | WARNING | django.server | "GET /favicon.ico HTTP/1.1" 404 2674

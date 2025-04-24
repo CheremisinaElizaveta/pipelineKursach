@@ -1,0 +1,310 @@
+
+
+body {
+    background-color: #E5ECF1; /* Светлый фон */
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0; /* Убираем отступы по умолчанию */
+    padding: 20px; /* Добавляем отступы для мобильных устройств */
+    box-sizing: border-box; /* Чтобы padding не увеличивал ширину body */
+}
+.container {
+    width: 100%; /* Занимает всю доступную ширину */
+    max-width: 400px; /* Максимальная ширина формы */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%; /* Форма занимает всю доступную ширину контейнера */
+    box-sizing: border-box; /* Чтобы padding не увеличивал ширину login-form */
+}
+
+h2 {
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-top: 5px;
+    
+}
+
+button {
+    background-color: #EFF5FB; /* Синий цвет кнопки */
+    color: #333;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+    background-color: #B7CCE2;
+}
+
+.register-link {
+    margin-top: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+.register-link a {
+    color: #14B9B1;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+    .container {
+        width: 90%; /* Увеличиваем ширину на мобильных устройствах */
+    }
+
+    .login-form {
+        padding: 20px; /* Уменьшаем отступы на мобильных устройствах */
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="number"] {
+        font-size: 14px; /* Уменьшаем размер шрифта на мобильных устройствах */
+        padding: 10px;
+    }
+
+    button {
+        font-size: 16px; /* Уменьшаем размер шрифта кнопки на мобильных устройствах */
+    }
+}
+
+.shape {
+    position: absolute; /* Абсолютное позиционирование */
+    z-index: -1; /* Отображаем за формой */
+    opacity: 0.5; /* Непрозрачность (опционально) */
+    width: 200px; /* Задайте желаемую ширину */
+    height: auto; /* Автоматическая высота */
+  }
+  
+  .shape-left {
+    top: 50%; /* Отступ сверху - 50% от высоты контейнера */
+    left: -100px; /* Выводим за левый край */
+    transform: translateY(-50%); /* Центрируем по вертикали */
+  }
+  .top-shape {
+    top: -30px; /* Сдвигаем вверх */
+    right: 100px; /* Сдвигаем вправо */
+    width: 300px;
+  }
+  .bottom-shape {
+    bottom: 0px; /* Сдвигаем вниз */
+    right: 10px; /* Сдвигаем вправо */
+    width: 350px;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-top: 5px;
+    appearance: none; /* Убираем стандартную стрелочку (можно кастомизировать) */
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+select:focus {
+    border-color: #B7CCE2;
+    outline: none;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-top: 5px;
+    resize: vertical; /* Пользователь может изменять только высоту */
+    background-color: #fff;
+    color: #333;
+    font-family: sans-serif;
+}
+
+textarea:focus {
+    border-color: #B7CCE2;
+    outline: none;
+}
+
+input[type="file"] {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+input[type="file"]:focus {
+    border-color: #B7CCE2;
+}
+
+.popup-button {
+    display: block;
+    padding: 10px 20px;
+    margin: 5px 0;
+    text-align: center;
+    background-color: #fff;
+    color: black; 
+    text-decoration: none; 
+    border-radius: 25px;
+    font-weight: 600; 
+    font-size: 16px;
+}
+
+.popup-button:hover {
+    background-color: #B7CCE2;
+}
+
+.popup-button_for_hover {
+    background-color: #B7CCE2;
+}
+
+input[type="datetime-local"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    background-color: #fff;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+input[type="datetime-local"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.question-container {
+    max-width: 800px;  /* Увеличено */
+    margin: 80px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .question-card p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .question-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .question-card li {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  #question-number {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .question-card {
+    display: none;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .question-card.active {
+    display: block;
+  }
+  
+  #next-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  #next-button:hover {
+    background-color: #45a049;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+.delete-checkbox {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.delete-checkbox input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #e74c3c; /* Красная галочка */
+    cursor: pointer;
+}
+
+.delete-label {
+    color: #e74c3c;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}

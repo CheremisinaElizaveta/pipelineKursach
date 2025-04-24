@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <link rel="stylesheet" href="{% static 'users/auth.css' %}">
+</head>
+<body>
+    <div class="container">
+        <img src="{% static 'users/images/LeftBlob.png' %}" alt="Левая фигура" class="shape shape-left">
+        <img src="{% static 'users/images/UpBlob.png' %}" alt="Верхняя фигура" class="shape top-shape">
+        <img src="{% static 'users/images/DownBlob.png' %}" alt="Нижняя фигура" class="shape bottom-shape">
+        <div class="login-form">
+            <h2>Вход</h2>
+            <form action="{% url 'login' %}" method="post">
+                {% csrf_token %}
+
+                <div class="input-group">
+                    <input type="text" id="username" name="username" placeholder="Логин">
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" name="password" placeholder="Пароль">
+                </div>
+                <button type="submit" >Войти</button>
+            </form>
+            <p class="register-link">Нет аккаунта? <a href="{% url 'register' %}">Регистрация</a></p>
+        </div>
+    </div>
+</body>
+</html>

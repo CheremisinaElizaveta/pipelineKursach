@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Назначить тестирование</title>
+    <link rel="stylesheet" href="{% static 'tests/create.css' %}">
+</head>
+<body>
+    <div class="container">
+        <img src="{% static 'users/images/LeftBlob.png' %}" alt="Левая фигура" class="shape shape-left">
+        <img src="{% static 'users/images/UpBlob.png' %}" alt="Верхняя фигура" class="shape top-shape">
+        <img src="{% static 'users/images/DownBlob.png' %}" alt="Нижняя фигура" class="shape bottom-shape">
+        
+        <div class="create-form">
+            <h2>Назначить тестирование</h2>
+            <form method="post" action="">
+                {% csrf_token %}
+
+                <!-- Выбор студента -->
+                <div class="input-group">
+                    <label for="student">Выберите студента:</label>
+                    <select id="student" name="user">
+                        {% for student in students %}
+                            <option value="{{ student.pk }}">
+                                {{ student.first_name }} {{ student.last_name }} {% if student.patronymic %}{{ student.patronymic }}{% endif %} {{ student.group.name }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="due_datetime">Срок выполнения:</label>
+                    <input type="datetime-local" id="due_datetime" name="due_datetime" required>
+                </div>
+                
+                <button type="submit">Назначить тест</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

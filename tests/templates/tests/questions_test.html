@@ -1,0 +1,65 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ test.name }}</title>
+        <link rel="stylesheet" href="{% static 'tests/create.css' %}">
+    </head>
+    <body>
+        
+        <form method="post" action="">
+            {% csrf_token %}
+            <div class="question-container">
+                {{ form.non_field_errors }}
+
+                {% for field in form %}
+                    <div class="question-card {% if forloop.first %}active{% endif %}">
+                    <p><strong>{{ field.label }}</strong></p>
+                        <div class="variants">
+                            {{ field.errors }}
+                            {{ field }}
+                        </div>
+                    </div>
+                {% endfor %}
+            
+                <div id="question-number">Вопрос 1 из {{ form.fields|length }}</div>
+                <button type="button" id="next-button">Следующий</button>
+                <button type="submit" id="submit-button" style="display: none;">Завершить</button>
+            </div>
+        </form>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const cards = document.querySelectorAll('.question-card');
+                const nextBtn = document.getElementById('next-button');
+                const submitBtn = document.getElementById('submit-button');
+                const questionNumber = document.getElementById('question-number');
+                let current = 0;
+                const total = cards.length;
+            
+                function showCard(index) {
+                    cards.forEach((card, i) => {
+                        card.classList.toggle('active', i === index);
+                    });
+                    questionNumber.textContent = `Вопрос ${index + 1} из ${total}`;
+                    if (index === total - 1) {
+                        nextBtn.style.display = 'none';
+                        submitBtn.style.display = 'inline-block';
+                    }
+                }
+            
+                nextBtn.addEventListener('click', () => {
+                    if (current < total - 1) {
+                        current++;
+                        showCard(current);
+                    }
+                });
+            
+                showCard(current);
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,150 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Тесты</title>
+  <link rel="stylesheet" href="{% static 'tests/testspsychologist.css' %}" />
+  <style>
+    .popup-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    .popup-content {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      color: #333;
+      width: 300px;
+      text-align: center;
+    }
+
+    .popup-content a {
+      display: block;
+      margin: 10px 0;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .popup-close {
+      margin-top: 15px;
+      cursor: pointer;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-left">
+      <nav>
+        <ul>
+          {% if request.user.is_authenticated %}
+            {% if request.user.role.name == 'психолог' %}
+              <li><a href="{% url 'home' %}">Тесты</a></li>
+              <li><a href="{% url 'tests:students_list' %}">Список студентов</a></li>
+              <li><a href="{% url 'psych_admin:index' %}">Панель психолога</a></li>
+            {% elif request.user.is_superuser %}
+              <li><a href="{% url 'admin:index' %}">Панель админа</a></li>
+            {% elif request.user.role.name == 'студент' %}
+              <li><a href="{% url 'home' %}">Мои тесты</a></li>
+              <li><a href="{% url 'my_recommendations' %}">Рекомендации</a></li>
+            {% endif %}
+          {% endif %}
+        </ul>
+      </nav>
+    </div>
+    <div class="header-right">
+      {% if request.user.is_authenticated %}
+        <a href="{% url 'logout' %}"><img src="{% static 'tests/images/image4.png' %}" alt="Выход из системы" class="logo"></a>
+      {% else %}
+        <a href="{% url 'login' %}"><img src="{% static 'tests/images/image2.png' %}" alt="Личный кабинет" class="logo"></a>
+      {% endif %}
+    </div>
+  </header>
+
+<main class="main">
+  <div class="test-grid">
+    {% for test in tests %}
+      <div class="test-card">
+        <h2>{{ test.name }}</h2>
+        <img src="{% if test.preview %}{{ test.preview.url }}{% endif %}" alt="{{ test.name }}">
+        {% if not request.user.is_authenticated or request.user.role.name == 'студент' %}
+          {% if test.trial and test.is_completed %}
+            <span>Тест пройден</span>
+          {% else %}
+            <a href="{% url 'tests:show_test' test.pk %}" class="assign-button">Пройти тест</a>
+          {% endif %}
+
+          {% if test.is_completed %}
+            <a href="{% url 'tests:test_result' test.pk %}" class="assign-button">Посмотреть результат</a>
+          {% endif %}
+        {% else %}
+          <a style="cursor: pointer;" class="assign-button open-popup" data-test-id="{{ test.pk }}">Назначить тестирование</a>
+          <a href="{% url 'tests:add_result' test.pk %}" class="assign-button">Добавить результат</a>
+          <a href="{% url 'tests:add_question' test.pk %}" class="assign-button">Добавить вопрос</a>
+          <a href="{% url 'tests:questions_list' test.pk %}" class="assign-button">Вопросы</a>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</main>
+
+{% if request.user.is_authenticated and request.user.role.name == 'психолог' %}
+  <a href="{% url 'tests:create' %}" class="add-button">+</a>
+{% endif %}
+
+<!-- Popup -->
+<div class="popup-overlay" id="popup">
+  <div class="popup-content">
+    <h3>Назначить тест для:</h3>
+    {% for personality_type in personality_types %}
+      <a href="{% url 'tests:personal_type' personality_type.pk  %}" class="assign-button">{{ personality_type.name }}</a>
+    {% endfor %}
+    <div class="popup-close">Закрыть</div>
+  </div>
+</div>
+
+<script>
+  const popup = document.getElementById('popup');
+  const openButtons = document.querySelectorAll('.open-popup');
+  const closeBtn = document.querySelector('.popup-close');
+  const popupLinks = document.querySelectorAll('.popup-link');
+
+  let selectedTestId = null;
+
+  openButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      selectedTestId = btn.dataset.testId;
+      popup.style.display = 'flex';
+    });
+  });
+
+  closeBtn.addEventListener('click', () => {
+    popup.style.display = 'none';
+  });
+
+  popupLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const group = link.dataset.group;
+      window.location.href = `/tests/assign/${selectedTestId}/?group=${group}`;
+    });
+  });
+
+  window.addEventListener('click', (e) => {
+    if (e.target === popup) {
+      popup.style.display = 'none';
+    }
+  });
+</script>
+</body>
+</html>

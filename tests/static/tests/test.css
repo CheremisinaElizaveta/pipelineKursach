@@ -1,0 +1,167 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+  height: 50px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left .logo {
+  height: 40px;
+  margin-right: 20px;
+}
+
+.header-left nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-left nav li {
+  margin-left: 70px;
+}
+
+.header-left nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+.header-left nav a:hover {
+  color: #007bff;
+}
+
+.user-icon {
+  font-size: 24px;
+  color: #007bff;
+}
+
+/* Main Content Styles */
+.main {
+  padding: 20px 0;
+}
+
+.test-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.test-image {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  background-color: #008AE9;
+  
+}
+
+.test-info {
+  padding: 20px;
+}
+
+.test-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.test-info p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.start-test-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #C8D9EB;
+  color: #333;
+  text-decoration: none;
+  border-radius: 15px;
+  margin-top: 20px;
+  font-weight:600;
+}
+
+.start-test-button:hover {
+  background-color: #B7CCE2;
+}
+
+.test-details {
+  margin-top: 15px;
+  color: #777;
+}
+
+.test-details span {
+  margin-right: 10px;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+  .container {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-left {
+    margin-bottom: 10px;
+  }
+
+  .header-left .logo {
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .header-left nav li {
+    margin-left: 10px;
+  }
+
+  .test-card {
+    flex-direction: column;
+  }
+
+  .test-image {
+    height: 200px;
+  }
+
+  .test-info {
+    padding: 10px;
+  }
+
+  .test-info h2 {
+    font-size: 20px;
+  }
+
+  .test-info p {
+    font-size: 14px;
+  }
+}

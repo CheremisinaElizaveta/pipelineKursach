@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Диаграмма результатов тестов</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Средние баллы по тестам</h1>
+    <canvas id="testResultsChart" width="400" height="200"></canvas>
+
+    <script>
+        const ctx = document.getElementById('testResultsChart').getContext('2d');
+
+        const testResultsChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: {{ labels|safe }},
+                datasets: [{
+                    label: 'Средний балл',
+                    data: {{ scores|safe }},
+                    backgroundColor: 'rgba(75, 192, 192, 0.6)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Средний балл'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Название теста'
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    title: {
+                        display: true,
+                        text: 'Средние баллы по тестам'
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+    height: 50px;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-left nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header-left nav li {
+    margin-left: 70px;
+  }
+  
+  .header-left nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .header-left nav a:hover {
+    color: #007bff;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-right span {
+    margin-left: 10px;
+    font-size: 24px;
+    color: #007bff;
+  }
+  
+  .main {
+    padding: 20px 0;
+  }
+  
+  .test-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .test-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .test-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain; /* Important: To avoid image distortion */
+  }
+  
+  .test-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .assign-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #C8D9EB;
+    color: #333;
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  
+  .assign-button:hover {
+    background-color: #B7CCE2;
+    color: #333;
+  }
+  
+  /* Add Button Styles */
+  .add-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #C8D9EB;
+    color: #333;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+  }
+  
+  .add-button:hover {
+    background-color: #B7CCE2;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 600px) {
+    .container {
+      margin: 10px;
+      padding: 10px;
+    }
+  }
+  

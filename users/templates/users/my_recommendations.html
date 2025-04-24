@@ -1,0 +1,68 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мои рекомендации</title>
+  <link rel="stylesheet" href="{% static 'users/myrecommendations.css' %}">
+</head>
+<header class="header">
+  <div class="header-left">
+    <nav>
+      <ul>
+        {% if request.user.is_authenticated %}
+          {% if request.user.role.name == 'психолог' %}
+            <li><a href="{% url 'home' %}">Тесты</a></li>
+            <li><a href="{% url 'tests:students_list' %}">Список студентов</a></li>
+            <li><a href="{% url 'psych_admin:index' %}">Панель психолога</a></li>
+          {% elif request.user.is_superuser %}
+            <li><a href="{% url 'admin:index' %}">Панель админа</a></li>
+          {% elif request.user.role.name == 'студент' %}
+            <li><a href="{% url 'home' %}">Мои тесты</a></li>
+            <li><a href="{% url 'my_recommendations' %}">Рекомендации</a></li>
+          {% endif %}
+        {% endif %}
+      </ul>
+    </nav>
+  </div>
+  <div class="header-right">
+    {% if request.user.is_authenticated %}
+      <a href="{% url 'logout' %}"><img src="{% static 'tests/images/image4.png' %}" alt="Выход из системы" class="logo"></a>
+    {% else %}
+      <a href="{% url 'login' %}"><img src="{% static 'tests/images/image2.png' %}" alt="Личный кабинет" class="logo"></a>
+    {% endif %}
+  </div>
+</header>
+
+<body>
+
+  <div class="container">
+    <main class="main">
+      <div class="test-card">
+        <div class="test-info">
+          <h2>Мои рекомендации: </h2>
+         <p><b>Рекомендации:</b></p>
+         {% for personality_recommendation in request.user.personality_recommendations.all %}
+          <p>{{ personality_recommendation.text }}</p>
+         {% endfor %}
+         <p><b>Рекомендованные виды деятельности:</b></p>
+            {% for type_activities in request.user.types_activities.all %}
+              <p>{{ type_activities.name }}: {{ type_activities.description }}</p>
+            {% endfor %}
+         <p><b>Склонности:</b></p>
+         <p>
+            {% for tendency in request.user.tendencies.all %}
+              {{ tendency.name }}{% if not forloop.last %}, {% endif %}
+            {% endfor %}
+         </p>
+         <p><b>Тип личности:</b> {{ request.user.personality_type.name }}</p>
+         <p><b>Рекомендации для типа личности:</b> {{ request.user.personality_type.recommendations }}</p>
+         </p>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Панель психолога</title>
+  <link rel="stylesheet" href="{% static 'tests/testspsychologist.css' %}" />
+  <style>
+    .tendency-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f9f9f9;
+      padding: 12px 16px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .tendency-name {
+        font-weight: 500;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .button-group {
+        display: flex;
+        gap: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-left">
+      <nav>
+        <ul>
+          {% if request.user.is_authenticated %}
+            {% if request.user.role.name == 'психолог' %}
+              <li><a href="{% url 'home' %}">Тесты</a></li>
+              <li><a href="{% url 'tests:students_list' %}">Список студентов</a></li>
+              <li><a href="{% url 'psych_admin:index' %}">Панель психолога</a></li>
+            {% elif request.user.is_superuser %}
+              <li><a href="{% url 'admin:index' %}">Панель админа</a></li>
+            {% elif request.user.role.name == 'студент' %}
+              <li><a href="{% url 'home' %}">Мои тесты</a></li>
+              <li><a href="{% url 'my_recommendations' %}">Рекомендации</a></li>
+            {% endif %}
+          {% endif %}
+        </ul>
+      </nav>
+    </div>
+    <div class="header-right">
+      {% if request.user.is_authenticated %}
+        <a href="{% url 'logout' %}"><img src="{% static 'tests/images/image4.png' %}" alt="Выход из системы" class="logo"></a>
+      {% else %}
+        <a href="{% url 'login' %}"><img src="{% static 'tests/images/image2.png' %}" alt="Личный кабинет" class="logo"></a>
+      {% endif %}
+    </div>
+  </header>
+
+
+    <main class="main">
+        <h1>Склонности</h1>
+        <a href="{% url 'psych_admin:tendency_create' %}" class="assign-button" style="margin-bottom: 10px;">Добавить склонность</a>
+        {% for tendency in tendencies %}
+          <div class="tendency-item">
+            <span class="tendency-name">{{ tendency.name }}</span>
+            <div class="button-group">
+              <a href="{% url 'psych_admin:tendency_update' tendency.pk %}" class="assign-button" style="background-color: green; color: white;">Изменить</a>
+              <a href="{% url 'psych_admin:tendency_delete' tendency.pk %}" class="assign-button" style="background-color: red; color: white;">Удалить</a>
+            </div>
+          </div>
+        {% endfor %}
+    </main>
+
+</body>
+</html>

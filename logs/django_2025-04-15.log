@@ -1,0 +1,21 @@
+2025-04-15 18:21:04 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-15 18:21:07 | INFO | django.server | "GET / HTTP/1.1" 200 5063
+2025-04-15 18:21:07 | INFO | django.server | "GET /media/tests/image5_hCChICD.png HTTP/1.1" 304 0
+2025-04-15 18:21:07 | INFO | django.server | "GET /media/tests/image5_3kJ5Tzq.png HTTP/1.1" 304 0
+2025-04-15 18:21:07 | INFO | django.server | "GET /media/tests/image5_0q2tS31.png HTTP/1.1" 304 0
+2025-04-15 18:21:07 | INFO | django.server | "GET /media/tests/image6_tbrtgqp.png HTTP/1.1" 304 0
+2025-04-15 18:21:07 | WARNING | django.request | Not Found: /favicon.ico
+2025-04-15 18:21:07 | WARNING | django.server | "GET /favicon.ico HTTP/1.1" 404 2987
+2025-04-15 18:21:18 | INFO | django.server | "GET / HTTP/1.1" 200 5063
+2025-04-15 18:21:20 | INFO | django.server | "GET /admin/ HTTP/1.1" 200 1129
+2025-04-15 18:21:22 | INFO | django.server | "GET /users/logs/ HTTP/1.1" 200 1150
+2025-04-15 18:21:48 | INFO | django.server | "GET /users/logs/ HTTP/1.1" 200 1150
+2025-04-15 19:46:28 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-15 19:46:29 | INFO | django.server | "GET / HTTP/1.1" 200 5063
+2025-04-15 19:46:32 | INFO | django.server | "GET /users/logout/ HTTP/1.1" 302 0
+2025-04-15 19:46:32 | INFO | django.server | "GET /users/login/ HTTP/1.1" 200 1430
+2025-04-15 19:46:33 | INFO | django.server | "GET /users/register/ HTTP/1.1" 200 3948
+2025-04-15 19:46:57 | INFO | django.server | "POST /users/register/ HTTP/1.1" 200 3948
+2025-04-15 19:47:06 | INFO | django.server | "GET /users/login/ HTTP/1.1" 200 1430
+2025-04-15 19:47:15 | INFO | django.server | "POST /users/login/ HTTP/1.1" 302 0
+2025-04-15 19:47:15 | INFO | django.server | "GET / HTTP/1.1" 200 4164

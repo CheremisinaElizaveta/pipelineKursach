@@ -1,0 +1,74 @@
+2025-04-14 19:26:10 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-14 19:26:29 | INFO | django.server | "GET / HTTP/1.1" 200 5268
+2025-04-14 19:26:34 | INFO | django.server | "GET /psych-admin/ HTTP/1.1" 200 1670
+2025-04-14 19:26:54 | INFO | django.server | "GET /psych-admin/tendencies/ HTTP/1.1" 200 3526
+2025-04-14 19:26:56 | INFO | django.server | "GET /psych-admin/tendencies/4/update/ HTTP/1.1" 200 1514
+2025-04-14 19:27:00 | INFO | django.server | "POST /psych-admin/tendencies/4/update/ HTTP/1.1" 302 0
+2025-04-14 19:27:00 | INFO | django.server | "GET /psych-admin/tendencies/ HTTP/1.1" 200 3524
+2025-04-14 19:27:12 | INFO | django.server | "GET / HTTP/1.1" 200 5268
+2025-04-14 19:27:16 | INFO | django.server | "GET /users/logout/ HTTP/1.1" 302 0
+2025-04-14 19:27:16 | INFO | django.server | "GET /users/login/ HTTP/1.1" 200 1430
+2025-04-14 19:27:32 | INFO | django.server | "POST /users/login/ HTTP/1.1" 302 0
+2025-04-14 19:27:32 | INFO | django.server | "GET / HTTP/1.1" 200 5063
+2025-04-14 19:29:45 | INFO | django.utils.autoreload | C:\Users\Admin\Django\kursach3program\testapp\tests\views.py changed, reloading.
+2025-04-14 19:29:45 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-14 19:29:59 | INFO | django.utils.autoreload | C:\Users\Admin\Django\kursach3program\testapp\tests\views.py changed, reloading.
+2025-04-14 19:30:00 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-14 19:30:43 | INFO | django.utils.autoreload | C:\Users\Admin\Django\kursach3program\testapp\users\urls.py changed, reloading.
+2025-04-14 19:30:44 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-14 19:30:46 | INFO | django.utils.autoreload | C:\Users\Admin\Django\kursach3program\testapp\users\urls.py changed, reloading.
+2025-04-14 19:30:47 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-14 19:30:53 | INFO | django.utils.autoreload | C:\Users\Admin\Django\kursach3program\testapp\users\urls.py changed, reloading.
+2025-04-14 19:30:54 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-14 19:31:06 | INFO | django.utils.autoreload | C:\Users\Admin\Django\kursach3program\testapp\tests\views.py changed, reloading.
+2025-04-14 19:31:06 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-14 19:31:12 | INFO | django.utils.autoreload | C:\Users\Admin\Django\kursach3program\testapp\users\views.py changed, reloading.
+2025-04-14 19:31:12 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-14 19:31:24 | INFO | django.utils.autoreload | C:\Users\Admin\Django\kursach3program\testapp\tests\views.py changed, reloading.
+2025-04-14 19:31:25 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-14 19:31:27 | INFO | django.utils.autoreload | C:\Users\Admin\Django\kursach3program\testapp\users\views.py changed, reloading.
+2025-04-14 19:31:28 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-14 19:32:08 | INFO | django.server | "GET / HTTP/1.1" 200 5063
+2025-04-14 19:32:13 | WARNING | django.request | Not Found: /logs
+2025-04-14 19:32:13 | WARNING | django.server | "GET /logs HTTP/1.1" 404 2966
+2025-04-14 19:32:28 | WARNING | django.request | Not Found: /logs/
+2025-04-14 19:32:28 | WARNING | django.server | "GET /logs/ HTTP/1.1" 404 2969
+2025-04-14 19:33:15 | INFO | django.utils.autoreload | C:\Users\Admin\Django\kursach3program\testapp\users\views.py changed, reloading.
+2025-04-14 19:33:16 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-14 19:33:47 | INFO | django.utils.autoreload | C:\Users\Admin\Django\kursach3program\testapp\users\views.py changed, reloading.
+2025-04-14 19:33:48 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-14 19:33:54 | INFO | django.utils.autoreload | C:\Users\Admin\Django\kursach3program\testapp\users\views.py changed, reloading.
+2025-04-14 19:33:55 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-14 19:33:59 | INFO | django.server | "GET / HTTP/1.1" 200 5063
+2025-04-14 19:34:04 | WARNING | django.request | Not Found: /logs
+2025-04-14 19:34:04 | WARNING | django.server | "GET /logs HTTP/1.1" 404 2966
+2025-04-14 19:35:23 | WARNING | django.request | Not Found: /logs
+2025-04-14 19:35:23 | WARNING | django.server | "GET /logs HTTP/1.1" 404 2966
+2025-04-14 19:35:25 | WARNING | django.request | Not Found: /log
+2025-04-14 19:35:25 | WARNING | django.server | "GET /log HTTP/1.1" 404 2963
+2025-04-14 19:36:04 | WARNING | django.request | Not Found: /logs/
+2025-04-14 19:36:04 | WARNING | django.server | "GET /logs/ HTTP/1.1" 404 2969
+2025-04-14 20:09:37 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-14 20:09:40 | WARNING | django.request | Not Found: /logs/
+2025-04-14 20:09:40 | WARNING | django.server | "GET /logs/ HTTP/1.1" 404 2969
+2025-04-14 20:09:52 | WARNING | django.request | Not Found: /login
+2025-04-14 20:09:52 | WARNING | django.server | "GET /login HTTP/1.1" 404 2969
+2025-04-14 20:10:09 | INFO | django.server | "GET /users/logout/ HTTP/1.1" 302 0
+2025-04-14 20:10:09 | INFO | django.server | "GET /users/login/ HTTP/1.1" 200 1430
+2025-04-14 20:10:14 | INFO | django.server | "POST /users/login/ HTTP/1.1" 302 0
+2025-04-14 20:10:14 | INFO | django.server | "GET / HTTP/1.1" 200 5063
+2025-04-14 20:11:02 | INFO | django.server | "GET / HTTP/1.1" 200 5063
+2025-04-14 20:11:04 | INFO | django.server | "GET / HTTP/1.1" 200 5063
+2025-04-14 20:11:04 | INFO | django.server | "GET / HTTP/1.1" 200 5063
+2025-04-14 20:11:11 | INFO | django.server | "GET /users/logout/ HTTP/1.1" 302 0
+2025-04-14 20:11:11 | INFO | django.server | "GET /users/login/ HTTP/1.1" 200 1430
+2025-04-14 20:11:15 | INFO | django.server | "POST /users/login/ HTTP/1.1" 302 0
+2025-04-14 20:11:15 | INFO | django.server | "GET / HTTP/1.1" 200 5063
+2025-04-14 20:11:23 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-14 20:11:26 | INFO | django.server | "GET /admin/ HTTP/1.1" 200 1129
+2025-04-14 20:11:28 | INFO | django.server | "GET /users/logs/ HTTP/1.1" 200 157
+2025-04-14 20:12:02 | INFO | django.utils.autoreload | C:\Users\Admin\Django\kursach3program\testapp\users\views.py changed, reloading.
+2025-04-14 20:12:03 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-14 20:12:06 | INFO | django.utils.autoreload | C:\Users\Admin\Django\kursach3program\testapp\users\views.py changed, reloading.
+2025-04-14 20:12:07 | INFO | django.utils.autoreload | Watching for file changes with StatReloader
+2025-04-14 20:12:09 | INFO | django.server | "GET /users/logs/ HTTP/1.1" 200 1151
