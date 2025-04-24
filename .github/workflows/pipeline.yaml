@@ -4,8 +4,6 @@ on:
   pull_request:
     branches: [ "master" ]
 
-jname: Code Style Check
-
 jobs:
   checkstyle_project:
     runs-on: ubuntu-latest
